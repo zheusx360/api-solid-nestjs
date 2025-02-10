@@ -1,6 +1,9 @@
 import { IsNotEmpty, IsNumber, IsString, Max, MaxLength, Min, MinLength } from 'class-validator'
+import { ObjectId } from 'mongoose'
 
 export class GamesDTO {
+
+   _id: ObjectId
 
    @IsNotEmpty()
    @IsString()
